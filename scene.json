@@ -1,0 +1,44 @@
+{
+    "Width": 400,
+    "Height": 400,
+    
+    "Bounces": 10,
+    "Samples": 300,
+    
+    "Camera": {
+        "Origin": [-0.1, 0.8, 2.1],
+        "Target": [-0.5, 0.8, 2.5]
+    },
+    
+    "Shapes": {
+        "Plane": {
+            "Orientation": [0.0, 1.0, 0.0], 
+            "Offset": 1.0, 
+            "Material": "FLOOR",
+            "Color": "BLUE"
+        },
+        
+        "Cone": {
+            "Position": [-4.0, 1.0, 8.0],
+            "PointA": [0.0, 0.5, 0.0],
+            "PointB": [0.0, 5.0, 0.0],
+            "RadiusA": 2.8,
+            "RadiusB": 0.2,
+            "Material": "LAMB", 
+            "Color": {
+                "ColorDKL": {
+                    "LD": 1.0,
+                    "RG": -1.0,
+                    "YV": 0.0
+                }
+            }
+        },
+        
+        "Box": {
+            "Position": [0.0, 0.0, 110.0], 
+            "Size": [1.2, 1000000000.0, 104.5],
+            "Material": "WALL",
+            "Color": "HALF"
+        }
+    }
+}
